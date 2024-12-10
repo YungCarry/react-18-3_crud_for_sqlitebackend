@@ -10,7 +10,7 @@ const Users = () => {
 
   useEffect(() => {
     apiClient
-      .get("users/" + { email })
+      .get(`users/${email}`)
       .then((response) => {
         setData(response.data);
       })
