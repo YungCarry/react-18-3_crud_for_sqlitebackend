@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Szamolo from './Pages/Szamolo';
 import Atvalto from './Pages/Atvalto';
 import Hiba from './Pages/Hiba';
+import Users from './Pages/Users'
 
 
 const root = ReactDOM.createRoot(
@@ -20,6 +21,7 @@ root.render(
       <Route path='/' element = {<App/>}/>
       <Route path='/atvalto' element = {<Atvalto/>}/>
       <Route path='*' element = {<Hiba/>}/>
+      <Route path="/users/:email" element={<Users />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
